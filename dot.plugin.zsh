@@ -126,16 +126,19 @@ __dot_remove() {
 
 __dot_help(){
   printf "Example usage:                 
+  
+  [ Project root specific commands ]
+    dot rails, r    - setup rails .$server_extention 
+    dot ember, e    - setup ember .$server_extention
+    dot list, ls    - list sites available
+    dot show, sh    - show app config
+    dot open, o     - open app config
+    dot config, c   - open plugin config 
+    dot remove, rm  - remove .$server_extention config 
 
-  dot rails, r    - setup rails .$server_extention 
-  dot ember, e    - setup ember .$server_extention
-  dot list, ls    - list sites available
-  dot show, sh    - show app config
-  dot open, o     - open app config
-  dot config, c   - open plugin config 
-  dot remove, rm  - remove .$server_extention config 
-  dot help, h     - show help 
-  dot version, v  - show version
+  [ Global commands ]
+    dot help, h     - show help 
+    dot version, v  - show version
 "
 }
 

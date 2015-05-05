@@ -23,14 +23,21 @@ The default plugins location uses the default zsh custom plugins location
 
 ## Basic Usage
 
+### Project root specific commands
+Run the following commands within your project root.
+
 ```
   dot rails, r    - setup rails .dev 
   dot ember, e    - setup ember .dev
-  dot list, ls    - list sites avialable
+  dot list, ls    - list sites available
   dot show, sh    - show app config
   dot open, o     - open app config
   dot config, c   - open plugin config 
   dot remove, rm  - remove .dev config 
+```
+
+### Global commands
+```
   dot help, h     - show help 
   dot version, v  - show version
 ```

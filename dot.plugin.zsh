@@ -167,6 +167,11 @@ __dot_not_found () {
   echo -e "     possibly run ${warning_color}dot list${normal_color} show all sites-available."
 }
 
+__dot_command_not_found () {
+    echo -e "dot: ${error_color}command not found.${normal_color}"
+    echo -e "     run ${warning_color}dot help${normal_color} for list of available commands."
+}
+
 __config_locate () {
     cmd=$1
     app_name=$2
@@ -234,6 +239,9 @@ dot_runner() {
   elif [[ $@ == "version" || $@ == "v" ]]; 
     then 
     __dot_version
+
+  else
+    __dot_command_not_found
 
   fi
 }
